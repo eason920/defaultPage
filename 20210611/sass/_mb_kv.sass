@@ -1,0 +1,89 @@
+$h_header: 52px
+
+#kv
+	background:
+		color: #131812
+		repeat: no-repeat
+		image: image-url('2021_b/mb_kvkv.jpg')
+		position: 0 center
+		position: center #{$h_header}
+	font-size: 0
+
+#kv-empty,
+#kv-empty2
+	width: 100%
+
+#kv-cta
+	transform: translateX(-50%)
+	margin-left: 50%
+	width: 200px
+	line-height: 50px
+	border-radius: 25px
+	box-shadow: -6.8px 12.2px 21.1px 0.9px rgba(27, 19, 16, 0.16)
+	background-color: #f74768
+	font-size: 1.45rem
+	letter-spacing: 2.6px
+	text-align: center
+	color: #ffffff
+	cursor: pointer
+	// animation: ani 1.5s linear infinite forwards
+
+#kv-title
+	margin:
+		left: 18%
+		bottom: 30px
+		left: 50%
+	transform: translateX(-50%)
+	display: block
+	width: 200px
+	// background-image: linear-gradient( to bottom, #000, rgba(0,0,0, 0))
+
+	
+@keyframes ani
+	49%
+		background-color: #f74768
+		color: #fff
+	50%
+		background-color: #fff
+		color: #f74768
+	99%
+		background-color: #fff
+		color: #f74768
+
+@media screen and (max-width: 639px)
+	#kv
+		padding-top: $h_header
+		height: 100vh
+		position: fixed
+		top: 0
+		overflow: hidden
+		background:
+			size: cover
+
+	#kv-title
+		margin-top: 20px
+	
+	.area2
+		margin-top: 100vh
+
+
+@media screen and (min-width: 640px)
+	$gutter: 40px
+
+	#kv
+		padding-top: calc( #{$h_header}  )
+		background:
+			size: contain
+		
+	#kv-cta
+		width: 400px
+		line-height: 80px
+		border-radius: 40px
+		font-size: 2.45rem
+
+	#kv-title
+		width: 400px
+		margin-top: 60px
+
+	.area2
+		margin-top: 50px

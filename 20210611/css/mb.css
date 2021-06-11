@@ -1206,10 +1206,15 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(-50%);
 }
 
+#kv, #kv-empty,
+#kv-empty2, #kv-cta, #kv-title {
+  box-sizing: border-box;
+}
+
 #kv {
   background-color: #131812;
   background-repeat: no-repeat;
-  background-image: url('../images/2021_b/mb_kvkv.jpg?1623381482');
+  background-image: url('../images/611/mb_main.jpg?1623381482');
   background-position: 0 center;
   background-position: center 52px;
   font-size: 0;
@@ -1241,7 +1246,7 @@ a:link, a:visited, a:hover, a:active {
   margin-left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 200px;
+  width: 210px;
 }
 
 @keyframes ani {
@@ -1262,18 +1267,12 @@ a:link, a:visited, a:hover, a:active {
   #kv {
     padding-top: 52px;
     height: 100vh;
-    position: fixed;
-    top: 0;
     overflow: hidden;
     background-size: cover;
   }
 
   #kv-title {
     margin-top: 20px;
-  }
-
-  .area2 {
-    margin-top: 100vh;
   }
 }
 @media screen and (min-width: 640px) {
@@ -1296,6 +1295,23 @@ a:link, a:visited, a:hover, a:active {
 
   .area2 {
     margin-top: 50px;
+  }
+}
+#vbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131812;
+  padding-bottom: 10%;
+}
+
+#vbox-img {
+  width: 80%;
+}
+
+@media screen and (min-width: 640px) {
+  #vbox {
+    margin-top: -5%;
   }
 }
 #kv > #kv-video {

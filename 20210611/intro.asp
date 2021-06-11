@@ -100,7 +100,7 @@ end function
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href="../../../defaultpage/assets/jquery.easy_slides.css" rel="stylesheet">
-<link href="../../../defaultpage/2021/css/pc.css?<%=now()%>" rel="stylesheet">
+<link href="../../../defaultpage/20210611/css/pc.css?<%=now()%>" rel="stylesheet">
 
 <!-- JS -->
 <script src='../../defaultpage/assets/jquery_v2.1.3.js'></script>
@@ -118,29 +118,34 @@ end function
 		$("body").append(data);
 	}); 
 	$(()=>{
-		const video = document.getElementById("kv-video");
-		$("#kv-default").click(function(){
+		$('#kv-default').click(function(){
+			const html = `
+				<div id="masker"></div>
+				<div id="masker-close">X</div>
+				<video id="kv-video" controls>
+					<source src='../../../defaultPage/20210611/ruby_s.mp4'>
+				</video>
+			`
+			$('body').append(html);
+			const video = document.getElementById("kv-video");
 			video.play();
-			$(this).remove();
 		});
 
-		const StopPoint = $("#kv").height() - 100;
-		$(window).scroll(function(){
-			if( $(window).scrollTop() >= StopPoint ){ video.pause() };
-		})
+		$('body').on('click', '#masker, #masker-close', function(){
+			$('#masker, #masker-close, #kv-video').remove();
+		});
 	});
+
 </script>
 
 <div class="all">
 	<header>
 		<a href="https://funday.asia">
-			<!--div class="Logo link" ></div-->
 			<img style='height: 29px;position: absolute;left: 10%;top: calc((52px / 2 ) - 15px);' src='../../logo/2021/white/h60.png'/>
 		</a>
 		<nav>
 			<ul>
-				<!-- Modify by Tom at 2019/6/5 -->
-				<!--<li><a href="https://funday.asia/lifeWeb" target="_blank">新 ‧ 生活</a></li><!-->
+				<li onclick="location.href='../../../about'"><a href="../../../about">關於FUNDAY</a></li>
 				<li onclick="location.href='../../../TeachingCenter/index.html'"><a href="../../../TeachingCenter/index.html">教學中心</a></li>
 				<li onclick="location.href='../../../subscription/planB'"><a href="../../../subscription/planB">訂閱方案</a></li>
 				<li onclick="location.href='../../../self-study'"><a href="../../../self-study">學習專區</a></li>
@@ -152,25 +157,10 @@ end function
 	</header>
 	<div id="kv">
 		<div id="kv-box">
-			<video id="kv-video" controls>
-				<source src='../../../defaultPage/2021/s.mp4'>
-			</video>
-			<img id="kv-default" src='../../../defaultPage/2021/images/2021/pc_default.jpg'/>
-			<img id="kv-title" src='../../../defaultpage/2021/images/2021/pc_title.png'/>
+			<img id="kv-default" src='../../../defaultpage/20210611/images/611/pc_video.png'/>
+			<div id="kv-cta" onclick="fun_channel_ci('join');">免費加入</div>
 		</div>
-		<div id="kv-cta" onclick="fun_channel_ci('join');">免費加入</div>
 	</div>
-	<!--div id="videoBox">
-		<div id='videoLoader'></div>
-		<div id='videoText'>
-			<h1 id='videoTitle'>學習，隨你所欲</h1>
-			<h4 id='videoSub'>
-				<span>結合數位學習、專業師資與場域，</span>
-				<span>打造如留學般的全英語生活學習圈，讓學習更自由，效果更卓越。</span>
-			</h4>
-			
-		</div>
-	</div-->
 	<!------------------->
 	<a id="area2"></a>
 	<div class="area2">FUNDAY的特色</div>

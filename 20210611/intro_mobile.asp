@@ -95,7 +95,6 @@ end function
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href="../defaultPage/assets/jquery.easy_slides.css" rel="stylesheet">
-<!--link href="../defaultPage/2021_b/css/mb.css?<%=now()%>" rel="stylesheet"-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="../defaultPage/assets/modernizr-custom.js"></script>
 <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -132,9 +131,54 @@ end function
 	<div id="kv">
 		<img id="kv-empty" src='../defaultPage/2021_b/images/2021_b/mb_empty.png'/>
 		<div id="kv-cta" onclick="Fa(127);fun_channel_MB('join')">免費加入</div>
-		<img id="kv-title" src='../defaultPage/2021_b/images/2021_b/mb_title.png'/>
+		<img id="kv-title" src='../defaultPage/20210611/images/611/mb_title.png'/>
 		<img id="kv-empty2" src='../defaultPage/2021_b/images/2021_b/mb_empty2.png'/>
 	</div>
+	<!------------------->
+	<div id="vbox">
+		<img id="vbox-img" src="../defaultPage/20210611/images/611/mb_video.jpg">
+	</div>
+	<script>
+		let videoString = `
+			<video id="kv-video" controls>
+				<source src='../defaultPage/20210611/ruby_ss.mp4'>
+			</video>
+		`;
+
+		const nua = navigator.userAgent;
+		const isIos = /iphone|ipad/i.test(nua);
+		console.log('isIos ?', isIos);
+
+		if( isIos ){
+			
+		}else{
+		}
+
+		$(()=>{
+			if( isIos ){
+				$('#vbox-img').click(function(){
+					$('#kv').append(videoString);
+					const videoEle = document.getElementById("kv-video");
+					videoEle.play();
+				});
+			}else{
+				let videoEle;
+				$('#vbox-img').click(function(){
+					videoString = `<div id="lb-android"><div id="lb-close">╳</div>${videoString}</div>`
+
+					$('body').append(videoString).css('overflow', 'hidden');
+					videoEle = document.getElementById("kv-video");
+					videoEle.play();
+				});
+
+				$('body').on('click', '#lb-close, #lb-android', function(){
+					$('body').removeAttr('style');
+					videoEle.pause();
+					$('#lb-android').remove();
+				})
+			}
+		});
+	</script>
 	<!------------------->
 	<h1 class="area2">FUNDAY線上數位英文教學</h1> 
 	<!-------------------> 

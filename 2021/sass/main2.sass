@@ -1,0 +1,77 @@
+.all
+  overflow-x: hidden
+
+#videoBox
+  overflow: hidden
+  width: 100vw
+  height: 764px
+
+#videoText
+  position: absolute
+  left: 50%
+
+#videoLoader
+  position: fixed
+  height: 764px
+  width: 100%
+  top: 0
+  background-color: #eaeaea
+  animation: ani-loader 1s 0.5s linear 1 forwards
+
+@keyframes ani-loader
+  100%
+    opacity: 0
+
+#videoText
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  top: 210px
+  animation: ani-vtext 0.8s linear 1 forwards
+  transform: translate(-50%, 15px)
+  opacity: 0
+
+@keyframes ani-vtext
+  100%
+    transform: translate(-50%, 0px)
+    opacity: 1
+
+#videoTitle, #videoSub
+  color: #fff
+  font-family: PingFangTC-Regular, "Microsoft JhengHei", sans-serif
+
+#videoTitle
+  font-size: 5rem
+  font-weight: bold
+  margin: 0
+
+#videoSub
+  font-size: 2rem
+  font-weight: lighter
+  text-align: center
+  margin-top: 25px
+  margin-bottom: 70px
+  padding: 0 30px
+  line-height: 1.5
+  letter-spacing: 2px
+
+  span
+    display: block
+
+#videoCta
+  margin-left: auto
+
+.area1
+  display: none !important
+
+#videoBox
+  position: fixed
+  top: 0
+
+.all
+  padding-top: 764px
+
+@media screen and (min-width: 1200px)
+  html, body
+    overflow-x: hidden

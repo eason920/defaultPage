@@ -1,0 +1,76 @@
+$h-header: 52px
+
+.area2
+	margin-top: 100vh
+	
+#kv
+	height: calc( 100vh - #{$h-header} )
+	width: 100%
+	max-width: 1920px
+	position: fixed
+	top: $h-header
+	left: 50%
+	transform: translateX(-50%)
+	background:
+		image: image-url('2021_b/pc_kvkv.jpg')
+		position: center
+		repeat: no-repeat
+		color: #333
+		size: cover
+
+#kv-box
+	position: fixed
+	top: calc( 52px + 5%)
+	left: 7%
+	height: calc( 100vh - ( 52px + 4% ) * 3 )
+
+#kv-video
+	height: 59%
+	border: solid 2px #fff
+	border-radius: 3px
+	
+#kv-title
+	display: block
+	height: 22%
+	margin-top: 7%
+
+#kv-default
+	position: fixed
+	top: calc( 52px + 5%)
+	left: 7%
+	border: solid 2px #fff
+	border-radius: 3px
+	cursor: pointer
+
+#kv-cta
+	position: fixed
+	top: calc( 100vh - 22% )
+	left: 50%
+	transform: translateX(-50%)
+	width: 290px
+	line-height: 56px
+	border-radius: 26px
+	box-shadow: -6.8px 12.2px 21.1px 0.9px rgba(27, 19, 16, 0.16)
+	background-color: #f74768
+	font-size: 1.8rem
+	letter-spacing: 2.6px
+	text-align: center
+	color: #ffffff
+	cursor: pointer
+	// animation: ani 1.5s linear infinite forwards
+
+@keyframes ani
+	49%
+		background-color: #f74768
+		color: #fff
+	50%
+		background-color: #fff
+		color: #f74768
+	99%
+		background-color: #fff
+		color: #f74768
+
+@media screen and (min-width: 1441px)
+	#kv
+		background:
+			position: center -40px

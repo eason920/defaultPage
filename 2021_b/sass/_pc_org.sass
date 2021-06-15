@@ -1,0 +1,992 @@
+html, body
+  font-family: PingFangTC-Regular,"Microsoft JhengHei", 黑體-繁, Lora, "Helvetica Neue", Helvetica, Arial, sans-serif
+  margin: 0
+  padding: 0
+
+.all
+  font-family: PingFangTC-Regular,微軟正黑體,sans-serif
+  min-width: 1200px
+  position: absolute
+  position: relative
+  margin: 0 auto
+  width: 100%
+  height: auto
+
+header
+  position: fixed
+  top: 0px
+  width: 100%
+  min-width: 1200px
+  height: 52px
+  background-color: rgba(0, 0, 0, 0.9)
+  z-index: 3
+
+.link
+  cursor: pointer
+
+.linkli
+  cursor: pointer
+
+  &:hover, &:active
+    color: #FFFFFF
+
+.Logo
+  position: absolute
+  left: 10%
+  width: 88px
+  height: 24px
+  top: calc((52px / 2 ) - 12px)
+  background-repeat: no-repeat
+  background-size: 88px 24px
+  background-image: url('../../Self-Study/images/FUNDAY_LOGO_W.png')
+
+nav
+  position: relative
+  float: right
+  right: 10%
+  height: 52px
+
+  ul li
+    position: relative
+    margin-right: 50px
+    font-size: 18px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: 1.4px
+    color: #ffffff
+    display: inline
+    cursor: pointer
+
+.joinDiv
+  border-radius: 18px
+  background-color: #ffffff
+  color: #000000
+  padding: 3px
+  padding-left: 12px
+  padding-right: 12px
+
+  &:hover
+    animation-play-state: paused
+    background-color: #f74768
+    color: #ffffff
+
+.Joinhide
+  animation-play-state: paused
+
+.Joinshow
+  animation-play-state: running
+  animation-name: shine
+  animation-iteration-count: infinite
+  animation-duration: 1s
+  animation-delay: -2s
+  animation-timing-function: step-start
+
+@keyframes shine
+  0%
+    background-color: #ffffff
+    color: #000000
+
+  50%
+    background-color: #f74768
+    color: #ffffff
+
+  100%
+    background-color: #ffffff
+    color: #000000
+
+nav ul li:hover, .LoginDiv:hover
+  color: #f74768
+
+.area2
+  position: relative
+  height: calc(15vh)
+  background-color: #FFFFFF
+  font-size: 2em
+  width: 100%
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+.area3
+  position: relative
+  height: calc(85vh)
+  background-color: #FFFFFF
+  width: 100%
+  min-height: 800px
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  align-content: center
+  justify-content: center
+  flex-wrap: wrap
+
+  .ItemList
+    position: relative
+    max-width: 1200px
+    min-width: 1200px
+    width: 100%
+    min-height: 800px
+    overflow: hidden
+    display: flex
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
+
+    .BlockDv
+      position: relative
+      width: 390px
+      min-height: 400px
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-content: center
+      flex-wrap: wrap
+
+      /*border: 1px solid;
+      flex-direction: column
+
+      .Slogn
+        position: relative
+        margin: 0 auto
+        font-size: 1.5em
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        text-align: left
+        color: #232323
+
+      ul li
+        position: relative
+        margin: 0 auto
+        font-size: 1.1em
+        line-height: 1.4em
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        text-align: left
+        color: #232323
+        list-style-type: disc
+
+.iconClass
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_self_study.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconFormal
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_formal.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconLife
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_life.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconTrack
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_track.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconCoach
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_coach_default.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconCefr
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_cefr.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconClass:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_self_study_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconFormal:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_formal_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconLife:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_life_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconTrack:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_track_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconCoach:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_coach_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.iconCefr:hover
+  position: relative
+  margin: 0 auto
+  width: 130px
+  height: 130px
+  background-image: url('../images/FUNDAY_landing_page_icon_teaching_cefr_hover.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.area4-1
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 50vh
+  min-height: 440px
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  background-color: #f9f9f9
+
+.area4-2
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 50vh
+  min-height: 440px
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  background-color: #f9f9f9
+  background-color: #ffffff
+
+.area4-1 .ItemList, .area4-2 .ItemList
+  position: relative
+  margin: 0 auto
+  max-width: 1200px
+  min-width: 1200px
+  width: 100%
+  overflow: hidden
+  height: 50vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.area4-1 .ItemList .Slogn, .area4-2 .ItemList .Slogn
+  font-size: 2.1em
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.71
+  letter-spacing: 1.1px
+  margin-left: 70px
+  text-align: left
+  color: #232323
+
+.area4-1 .ItemList ul li
+  position: relative
+  margin-left: 50px
+  font-size: 1.1em
+  line-height: 1.4em
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 1.4px
+  text-align: left
+
+.area4-2 .ItemList .content
+  position: relative
+  margin-left: 70px
+  margin-top: 20px
+  font-size: 18px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 1.4px
+  text-align: left
+
+.area5
+  position: relative
+  height: 800px
+  background-color: #f9f9f9
+  width: 100%
+  margin-top: 0px
+  margin: 0px
+  overflow: hidden
+  display: flex
+  align-content: center
+  justify-content: center
+  flex-wrap: wrap
+
+  .ItemList
+    margin: 0px
+    padding: 0px
+    position: relative
+    max-width: 1850px
+    min-width: 1250px
+    width: 100%
+    height: 740px
+    overflow: hidden
+    display: flex
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
+
+    .Slogn
+      position: relative
+      width: 100%
+      height: 31px
+      font-size: 2em
+      text-align: center
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-content: center
+      flex-wrap: wrap
+      color: #232323
+      margin: 20px
+
+    .BlockDv
+      width: 100%
+      overflow: hidden
+      height: 600px
+
+      .PicDv, .PicDvh
+        width: 200px
+        height: 200px
+        cursor: pointer
+
+.Mbg
+  width: 200px
+  height: 200px
+  cursor: pointer
+
+.area5 .ItemList .BlockDv
+  .PicDv
+    //margin: 30px;
+
+  .PicDvh
+    margin-top: -200px
+    opacity: 0
+    z-index: 1
+    -webkit-transition: opacity .5s
+    -moz-transition: opacity .5s
+    transition: opacity .5s
+    background-color: rgba(247, 71, 104, 0.76)
+    font-size: 1.8em
+    text-shadow: 0.5px 0.9px 2px rgba(52, 52, 52, 1)
+    line-height: 200px
+    text-align: center
+    color: #ffffff
+    font-weight: 300
+
+  .PicDv:hover
+    .Mbg
+      filter: blur(2px)
+
+    .PicDvh
+      opacity: 0.76
+
+#FlipWall
+  margin: 0 auto
+  overflow: hidden
+  list-style: none
+
+  li
+    width: 200px
+    height: 200px
+    float: left
+    position: relative
+
+    //margin: 10px;
+
+.flip-back, .flip-front
+  position: absolute
+  left: 0
+  top: 0
+  width: 200px
+  height: 200px
+  text-align: center
+  line-height: 200px
+
+.flip-3d
+  transform-style: preserve-3d
+
+.Mpic
+  background-position: center
+  background-size: 200px 200px
+  background-repeat: no-repeat
+  -webkit-filter: saturate(0.3)
+
+.area6
+  position: relative
+  height: 400px
+  background-color: #ffffff
+  width: 100%
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  align-content: center
+  justify-content: center
+  flex-wrap: wrap
+
+  .ItemList
+    position: relative
+    max-width: 1200px
+    min-width: 1200px
+    width: 100%
+    height: 400px
+    overflow: hidden
+    display: flex
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
+
+    .BlockDv, .BlockDv2
+      position: relative
+      width: 100%
+      height: 120px
+      font-size: 2em
+      text-align: center
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-content: center
+      flex-wrap: wrap
+
+      //color: #FFFFFF;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1) inset
+
+.marquee, .marquee2
+  width: 96%
+  overflow: hidden
+
+.area6 .ItemList .BlockDv2
+  img
+    /*display: none;
+    height: 80px
+
+  &::before
+    content: ""
+    position: absolute
+    left: 0px
+    width: 80px
+    height: 120px
+
+    /*background: rgba(90,90,90,0.9);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* FF3.6-15
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* Chrome10-25,Safari5.1-6
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+    filter: blur(10px)
+    z-index: 2
+
+  &::after
+    content: ""
+    position: absolute
+    left: 95%
+    width: 80px
+    height: 120px
+
+    /*background: rgba(90,90,90,0.9);
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* FF3.6-15
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* Chrome10-25,Safari5.1-6
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)
+
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+    filter: blur(10px)
+    z-index: 2
+
+.area7
+  position: relative
+  height: 580px
+  background-image: url(../images/FUNDAY_landing_page_pic_reachable.jpg)
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  width: 100%
+  min-height: 500px
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .ItemList
+    position: relative
+    max-width: 1200px
+    min-width: 1200px
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 100%
+    height: 500px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    flex-direction: column
+
+    .LogoB
+      position: relative
+      margin: 0 auto
+      width: 198px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: auto 30px
+      background-image: url(../../../logo/2021/black/h60.png)
+
+    .Slogn
+      position: relative
+      margin: 0 auto
+      margin-top: 40px
+      height: 1.2em
+      border: 1px #000000 solid
+      padding: 10px
+      font-size: 2em
+
+      /* font-weight: 500;
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.2em
+      letter-spacing: 1px
+      text-align: left
+      color: #232323
+
+.area8
+  position: relative
+  width: 100%
+  height: 450px
+  margin-top: 0px
+  margin: 0 auto
+  overflow: hidden
+  display: flex
+  flex-wrap: wrap
+  align-content: center
+  align-items: center
+  background: url('../images/FUNDAY_pc_product_intro_bg_understand.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+  .ItemList
+    position: relative
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 100%
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+
+  .Slogn
+    position: relative
+    margin: 0 auto
+    margin-bottom: 10px
+    width: 100%
+    height: 35px
+    font-size: 2em
+    font-weight: 500
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: 2.7px
+    text-align: center
+    color: #ffffff
+
+  .Content, .ContentS
+    position: relative
+    margin: 0 auto
+    margin-top: 10px
+    margin-bottom: 10px
+    width: 100%
+
+    /*height: 35px;
+    font-size: 1.5em
+    line-height: 35px
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: 2.7px
+    text-align: center
+    color: #ffffff
+
+  .Content
+    /*margin-top: 40px;
+
+  .ContentS
+    font-size: 1.2em
+    font-weight: 100
+    text-align: center
+    color: #ffffff
+
+  .ContentB
+    position: relative
+    margin-left: 15px
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 169px
+    height: 40px
+    line-height: 40px
+    font-size: 1.2em
+    border-radius: 20px
+    text-align: center
+    color: #ffffff
+    background-color: rgba(255, 255, 255, 0.2)
+
+  .rightIcon
+    position: relative
+    margin: 0 auto
+    float: left
+    left: 20px
+    top: calc(20px - 10px)
+    width: 23px
+    height: 23px
+    background-repeat: no-repeat
+    background-size: 20px 20px
+    background-image: url('../images/FUNDAY_product_intro_img_hook.png')
+
+.JButton
+  position: relative
+  margin: 0 auto
+  margin-top: 12px
+  margin-bottom: 25px
+  width: 200px
+  height: 48px
+  border-radius: 24px
+  box-shadow: -7px 12.1px 21.1px 0.9px rgba(27, 19, 16, 0.16)
+  background-color: #fff5f5
+  font-size: 1.2em
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  line-height: 48px
+  letter-spacing: 2.6px
+  color: #f74768
+  text-align: center
+  cursor: pointer
+  animation-name: ButtonJump
+  animation-timing-function: ease
+  animation-duration: 0.9s
+
+  &:hover
+    background-color: #ffffff
+
+  &:active
+    box-shadow: none
+
+.Jhide
+  opacity: 0
+  animation-play-state: paused
+
+.Jshow
+  animation-play-state: running
+  animation-fill-mode: forwards
+
+@keyframes ButtonJump
+  0%
+    width: 1px
+    font-size: 0.1em
+    height: 1px
+    line-height: 1px
+    opacity: 0
+
+  30%
+    width: 205px
+    font-size: 1.3em
+    height: 55px
+    line-height: 55px
+    opacity: 0.3
+
+  80%
+    width: 200px
+    font-size: 1.2em
+    height: 48px
+    line-height: 48px
+    opacity: 0.8
+
+  100%
+    width: 200px
+    font-size: 1.2em
+    height: 48px
+    line-height: 48px
+    opacity: 1
+
+.white
+  /*color: #606060;
+   *border: solid 1px #b7b7b7;
+  background: #fff
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed))
+  background: -moz-linear-gradient(top, #fff, #ededed)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed')
+
+  &:hover
+    background: #ededed
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc))
+    background: -moz-linear-gradient(top, #fff, #dcdcdc)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc')
+
+  &:active
+    /*color: #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff))
+    background: -moz-linear-gradient(top, #ededed, #fff)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff')
+
+footer
+  position: relative
+  margin: 0 auto
+  width: 100%
+  min-width: 1200px
+  height: 450px
+  background-color: #1b1b1b
+  display: flex
+  flex-wrap: wrap
+  align-content: center
+  align-items: center
+
+  .ItemList
+    position: relative
+    margin: 0 auto
+    max-width: 1200px
+    min-width: 1200px
+    width: 100%
+    height: 450px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-content: space-around
+    flex-wrap: wrap
+
+  .Slogn
+    font-size: 1.2em
+    font-weight: 500
+    font-style: normal
+    font-stretch: normal
+    line-height: 2
+    letter-spacing: 1.4px
+    text-align: left
+    color: #ffffff
+    position: relative
+    margin-left: 50px
+
+  .Blog
+    height: 14px
+    opacity: 0.86
+    font-size: 1em
+    font-weight: 300
+    font-style: normal
+    font-stretch: normal
+    line-height: 4
+    letter-spacing: 1.1px
+    text-align: left
+    color: rgba(204, 204, 204, 0.86)
+    position: relative
+    margin-left: 50px
+    margin-top: 20px
+
+  ul li
+    position: relative
+    margin: 0 auto
+    font-size: 1em
+    line-height: 3em
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    text-align: left
+    color: rgba(204, 204, 204, 0.86)
+    list-style: none
+    position: relative
+    margin-left: 10px
+
+  .iconList
+    position: relative
+    margin-top: 20px
+    display: flex
+    flex-direction: row
+
+.iconFB
+  position: relative
+  margin-left: 50px
+  width: 50px
+  height: 50px
+  background-image: url('../images/FUNDAY_pc_product_intro_icon_fb.png')
+  background-position: center
+  background-size: 47px 47px
+  background-repeat: no-repeat
+
+  &:hover
+    position: relative
+    margin-left: 50px
+    width: 50px
+    height: 50px
+    background-image: url('../images/FUNDAY_pc_product_intro_icon_fb_hover.png')
+    background-position: center
+    background-size: 47px 47px
+    background-repeat: no-repeat
+
+.iconIG
+  position: relative
+  margin-left: 20px
+  width: 50px
+  height: 50px
+  background-image: url('../images/FUNDAY_pc_product_intro_icon_ig.png')
+  background-position: center
+  background-size: 47px 47px
+  background-repeat: no-repeat
+
+  &:hover
+    position: relative
+    margin-left: 20px
+    width: 50px
+    height: 50px
+    background-image: url('../images/FUNDAY_pc_product_intro_icon_ig_hover.png')
+    background-position: center
+    background-size: 47px 47px
+    background-repeat: no-repeat
+
+.iconYT
+  position: relative
+  margin-left: 20px
+  width: 50px
+  height: 50px
+  background-image: url('../images/FUNDAY_pc_product_intro_icon_yt.png')
+  background-position: center
+  background-size: 47px 47px
+  background-repeat: no-repeat
+
+  &:hover
+    position: relative
+    margin-left: 20px
+    width: 50px
+    height: 50px
+    background-image: url('../images/FUNDAY_pc_product_intro_icon_yt_hover.png')
+    background-position: center
+    background-size: 47px 47px
+    background-repeat: no-repeat
+
+.iconLine
+  position: relative
+  margin-left: 20px
+  width: 50px
+  height: 50px
+  background-image: url('../images/FUNDAY_pc_product_intro_icon_line.png')
+  background-position: center
+  background-size: 47px 47px
+  background-repeat: no-repeat
+
+  &:hover
+    position: relative
+    margin-left: 20px
+    width: 50px
+    height: 50px
+    background-image: url('../images/FUNDAY_pc_product_intro_icon_line-hover.png')
+    background-position: center
+    background-size: 47px 47px
+    background-repeat: no-repeat
+
+.reg_follow
+  position: fixed
+  background: url('../images/pc-follow.png')
+  width: 305px
+  height: 164px
+  right: 0px
+  bottom: 10px
+  z-index: 3
+  cursor: pointer
+
+footer .crop
+  position: relative
+  margin: 0 auto
+  margin-bottom: 20px
+  height: 16px
+  font-size: 1em
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 2.87
+  letter-spacing: 0.8px
+  text-align: center
+  color: #ffffff
+
+/*
+ *	Modify by Tom 2019/6/5
+ *	for SEO
+
+a
+  font-size: 18px
+  color: #ffffff
+
+  &:link, &:visited, &:hover, &:active
+    text-decoration: none
+
+#login
+  display: none

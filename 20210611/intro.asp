@@ -95,7 +95,7 @@ function BgTime()
 end function
 %>
 
-<title>20210611 Funday英語教育</title>
+<title>Funday英語教育</title>
 <!-- CSS -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -122,13 +122,9 @@ end function
 			const html = `
 				<div id="masker"></div>
 				<div id="masker-close">X</div>
-				<video id="kv-video" controls>
-					<source src='../../../defaultPage/20210611/ruby_s.mp4'>
-				</video>
+				<iframe id="kv-video" src='../../../defaultPage/20210611/mv.html' frameBorder="0">
 			`
 			$('body').append(html);
-			const video = document.getElementById("kv-video");
-			video.play();
 		});
 
 		$('body').on('click', '#masker, #masker-close', function(){

@@ -121,7 +121,7 @@ end function
 		<nav>
 			<ul>
 				<div><li onclick="Fa(129);location.href='../../subscription/planB'"><a href="../../subscription/planB">訂閱方案</a></li></div>  
-				<div><li onclick="Fa(131);fun_channel_MB('join')">20210611 免費註冊體驗</li></div>
+				<div><li onclick="Fa(131);fun_channel_MB('join')">免費註冊體驗</li></div>
 				<div ><li onclick="location.href='/TeachingCenter/index.html'"><a href="/TeachingCenter/index.html">教學中心</a></li></div>
 				<div style="border-bottom: 0px;"><li onclick="location.href='/about/'"><a href="/about/">關於FUNDAY</a></li></div>
 			</ul>
@@ -140,43 +140,36 @@ end function
 	</div>
 	<script>
 		let videoString = `
-			<video id="kv-video" controls>
-				<source src='../defaultPage/20210611/ruby_ss.mp4'>
-			</video>
+			<iframe id="kv-video" src='../defaultPage/20210611/mv.html' frameBorder="0">
 		`;
 
 		const nua = navigator.userAgent;
 		const isIos = /iphone|ipad/i.test(nua);
 		console.log('isIos ?', isIos);
 
-		if( isIos ){
-			
-		}else{
-		}
-
 		$(()=>{
-			if( isIos ){
-				$('#vbox-img').click(function(){
-					$('#kv').append(videoString);
-					const videoEle = document.getElementById("kv-video");
-					videoEle.play();
-				});
-			}else{
-				let videoEle;
-				$('#vbox-img').click(function(){
-					videoString = `<div id="lb-android"><div id="lb-close">╳</div>${videoString}</div>`
+			// if( isIos ){
+			// 	$('#vbox-img').click(function(){
+			// 		$('#kv').append(videoString);
+					
+			// 		// const videoEle = document.getElementById("kv-video");
+			// 		// videoEle.play();
+			// 	});
+			// }else{
+			// }
+			// let videoEle;
+			$('#vbox-img').click(function(){
+				videoString = `<div id="lb-android"><div id="lb-close">╳</div>${videoString}</div>`
+				$('body').append(videoString).css('overflow', 'hidden');
+				const ww = $('#kv-video').width();
+				const hh = ww * 0.56;
+				$('#kv-video').css('height', hh);
+			});
 
-					$('body').append(videoString).css('overflow', 'hidden');
-					videoEle = document.getElementById("kv-video");
-					videoEle.play();
-				});
-
-				$('body').on('click', '#lb-close, #lb-android', function(){
-					$('body').removeAttr('style');
-					videoEle.pause();
-					$('#lb-android').remove();
-				})
-			}
+			$('body').on('click', '#lb-close, #lb-android', function(){
+				$('body').removeAttr('style');
+				$('#lb-android').remove();
+			})
 		});
 	</script>
 	<!------------------->

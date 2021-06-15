@@ -1,11 +1,11 @@
 node_modules/
 public/assets/
-public/css/
+*/css/
 public/data/
 public/images/
 public/api/
 public/js/
-source/.sass-cache/
+*/.sass-cache/
 source/css/
 package-lock.json
 20210611/*.mp4

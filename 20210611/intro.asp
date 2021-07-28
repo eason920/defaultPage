@@ -94,8 +94,16 @@ function BgTime()
 
 end function
 %>
+<meta name="description" content="FUNDAY台灣最大英語數位資料庫，超過1萬多篇時事新聞、商用英語每日更新。每天只要15分鐘，讓學英文融入生活。採用歐洲CEFR語言學習架構，建立個人專屬計畫與追蹤！國內50所大學語言中心培訓實績，上百間大型公民營企業培訓經驗，開拓更寬廣的國際視野。">
+<meta name="keywords" content="看新聞學英文,英文閱讀,時事英文,線上英文,學習英文,看電影學英文,英語會話,雙語新聞,線上英文課程,英聽,聽力練習,線上英語,英文文法,聽音樂學英文,英文寫作,英語口說">
+<meta name="author" content="">
+<meta property="og:title" content="FUNDAY英語教育 | 專業線上英文學習平台，讓學習與生活結合" >
+<meta property="og:url" content="https://funday.asia">
+<meta property="og:image" content="https://funday.asia/defaultpage/20210611/images/611/pc_main.jpg">
+<meta property="og:description" content="FUNDAY台灣最大英語數位資料庫，超過1萬多篇時事新聞、商用英語每日更新。每天只要15分鐘，讓學英文融入生活。採用歐洲CEFR語言學習架構，建立個人專屬計畫與追蹤！國內50所大學語言中心培訓實績，上百間大型公民營企業培訓經驗，開拓更寬廣的國際視野。" >
+<meta property="og:keywords" content="看新聞學英文,英文閱讀,時事英文,線上英文,學習英文,看電影學英文,英語會話,雙語新聞,線上英文課程,英聽,聽力練習,線上英語,英文文法,聽音樂學英文,英文寫作,英語口說">
 
-<title>Funday英語教育</title>
+<title>FUNDAY英語教育 | 專業線上英文學習平台，讓學習與生活結合</title>
 <!-- CSS -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -113,6 +121,16 @@ end function
 <link href="https://funday.asia/MemberExperience/css/MemberExp.css" rel="stylesheet" />
 <script src="https://funday.asia/MemberExperience/MemberExp.js"></script>
 <script src='https://funday.asia/Funfa/Fa.js'></script>
+<!-- GTM Code -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5J9V9J');
+</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5J9V9J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- GTM Code -->
 <script>
 	$.get("../../../defaultpage/join.asp",function(data){ //初始將tool.htm" include
 		$("body").append(data);
@@ -135,6 +153,10 @@ end function
 </script>
 
 <div class="all">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHQBJ2G"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<header>
 		<a href="https://funday.asia">
 			<img style='height: 29px;position: absolute;left: 10%;top: calc((52px / 2 ) - 15px);' src='../../logo/2021/white/h60.png'/>

@@ -128,7 +128,7 @@ end function
 		</nav>     
 	</header>
 	<!------------------->
-	<div id="kv" style="background-image: url(../../../defaultpage/20210611/images/611/mb_main.jpg?110817_1340)">
+	<div id="kv" style="background-image: url(../../../defaultpage/20210611/images/611/mb_main.jpg?110819)">
 		<img id="kv-empty" src='../defaultPage/2021_b/images/2021_b/mb_empty.png'/>
 		<div id="kv-cta" onclick="Fa(127);fun_channel_MB('join')">免費加入</div>
 		<img id="kv-title" src='../defaultPage/20210611/images/611/mb_title.png'/>

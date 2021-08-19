@@ -173,7 +173,7 @@ end function
 			</ul>
 		</nav>  
 	</header>
-	<div id="kv" style="background-image: url(../../../defaultpage/20210611/images/611/pc_main.jpg?110817_1340)">
+	<div id="kv" style="background-image: url(../../../defaultpage/20210611/images/611/pc_main.jpg?110819)">
 		<div id="kv-box">
 			<img id="kv-default" src='../../../defaultpage/20210611/images/611/pc_video.png'/>
 			<div id="kv-cta" onclick="fun_channel_ci('join');">免費加入</div>

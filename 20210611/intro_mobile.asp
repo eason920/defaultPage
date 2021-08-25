@@ -104,6 +104,13 @@ end function
 <link href="https://funday.asia/MemberExperience/css/MemberExpMobile.css" rel="stylesheet" />
 <script src="https://funday.asia/MemberExperience/MemberExp.js"></script>
 <script src='https://funday.asia/Funfa/Fa.js'></script>
+<!-- Google Tag Manager 1100824 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMX8746');</script>
+<!-- End Google Tag Manager -->
 <script>
 	$.get("../defaultPage/join.asp",function(data){ //初始將tool.htm" include
 		$("body").append(data);
@@ -116,6 +123,10 @@ end function
 </script>
 
 <div class="all">
+	<!-- Google Tag Manager (noscript) 1100824 -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMX8746"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<header>
 		<div class="menuIcon menu"></div><a href="https://funday.asia"><div class="Logo" ></div></a><div class="LoginDiv" onclick="Fa(133);">登入</div>
 		<nav>

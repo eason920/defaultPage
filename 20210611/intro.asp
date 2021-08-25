@@ -131,6 +131,15 @@ end function
 </script>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5J9V9J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- GTM Code -->
+
+<!-- Google Tag Manager 1100824 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMX8746');</script>
+<!-- End Google Tag Manager -->
+
 <script>
 	$.get("../../../defaultpage/join.asp",function(data){ //初始將tool.htm" include
 		$("body").append(data);
@@ -157,6 +166,12 @@ end function
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHQBJ2G"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Google Tag Manager (noscript) 1100824 -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMX8746"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<header>
 		<a href="https://funday.asia">
 			<img style='height: 29px;position: absolute;left: 10%;top: calc((52px / 2 ) - 15px);' src='../../logo/2021/white/h60.png'/>
